@@ -23,11 +23,13 @@ const Footer = () => {
         </Slide>
         <FooterItem>
           <div>
+          <Up>
           <Fade>
           <ArrowUp onClick={scrollUp}>
             <AiOutlineArrowUp />
           </ArrowUp>
         </Fade>
+          </Up>
           </div>
         <div className="address">
           <Slide direction="left">
@@ -67,21 +69,21 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="https://github.com/adembasharon">
+                <a href="https://github.com/adembasharon" target="_blank">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/">
+                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/" target="_blank">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="https://www.facebook.com/profile.php?id=100078940822960">
+                <a href="https://www.facebook.com/profile.php?id=100078940822960" target="_blank">
                   <BsFacebook />
                 </a>
               </span>
@@ -136,7 +138,8 @@ const Container = styled.div`
   justify-content: space-between;
 
   @media (max-width: 840px) {
-    width: 90%;
+    width: 70%;
+    font-size:1rem;
   }
 
   @media (max-width: 650px) {
@@ -150,6 +153,29 @@ flex-direction: row;
 align-items: center;
 justify-content:center;
 gap:4em;
+
+@media (max-width: 840px) {
+  width: 90%;
+  align-items: center;
+  font-size:1rem;
+
+}
+
+@media (max-width: 650px) {
+  flex-direction: column;
+  gap: 3rem;
+  align-items:center;
+  font-size:1rem;
+}
+`
+const Up=styled.div`
+@media (max-width: 840px) {
+ display:none;
+}
+
+@media (max-width: 650px) {
+ display:none;
+}
 `
 const Profile = styled.div`
   flex: 1;

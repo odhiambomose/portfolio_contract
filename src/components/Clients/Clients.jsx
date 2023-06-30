@@ -45,7 +45,9 @@ const Clients = () => {
   return (
     <Container id='client'>
         <Slide direction="left">
+            <Tech>
             <span className="green">Technologies</span>
+            </Tech>
         </Slide>
         <Testimonials>
             <div className='technologies'>
@@ -86,7 +88,7 @@ const Clients = () => {
             <FaRegDotCircle/>
             </div>
             <div>
-            <h3>nextjs</h3>
+            <h3>Nextjs</h3>
             </div>
             </Dot>
             </Technologieslist>
@@ -98,7 +100,7 @@ const Clients = () => {
             <FaRegDotCircle/>
             </div>
             <div>
-            <h3>ReactNative</h3>
+            <h3>React Native</h3>
             </div>
             </Dot>
             <Dot>
@@ -106,7 +108,7 @@ const Clients = () => {
             <FaRegDotCircle/>
             </div>
             <div>
-            <h3>Bootsrap</h3>
+            <h3>Bootstrap</h3>
             </div>
             </Dot>
             </Technologieslist>
@@ -135,6 +137,7 @@ const Container = styled.div`
         font-weight: 700;
         text-transform: uppercase;
     }
+
 
     h1{
         padding-top: 1rem;
@@ -179,16 +182,57 @@ const Container = styled.div`
         margin: 0;
     }
 `
+const Tech=styled.div`
+@media (max-width: 840px) {
+   text-align: center;
+font-size:1rem;
+  }
+  
+  @media (max-width: 650px) {
+   text-align:center;
+   font-size:1rem;
+  }
+`
 const Technologieslist=styled.div`  
   display: flex;
     flex-direction: column;
         gap:1em;
         alignItems:flex-start;
+        @media (max-width: 840px) {
+            display: flex;
+            align-items: center;
+            flex-direction: ,column;
+            font-size:.5rem;
+    
+          }
+          
+          @media (max-width: 650px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            align-items:center;
+          }
+
+      
         
 `
 const Testimonials = styled.div`
     margin-top: 2rem;
     position: relative;
+    @media (max-width: 840px) {
+        display: flex;
+        align-items: center;
+        flex-direction: ,column;
+        font-size:.5rem;
+
+      }
+      
+      @media (max-width: 650px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items:center;
+      }
 `
 const Dot = styled.div`
 display: flex;

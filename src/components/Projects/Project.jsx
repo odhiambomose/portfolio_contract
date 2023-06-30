@@ -9,9 +9,8 @@ const Project = (props) => {
         <div className="disc">
             <h1>Description</h1>
             <p>{disc}
-            <a href="{link}">{link}</a>
+            <a href={link} target="_blank">View Project</a>
             </p>
-            {/* <p>{link}</p> */}
         </div>
     </Container>
   )
@@ -52,7 +51,9 @@ const Container = styled.div`
             font-size: 0.8rem;
             a{
                 margin-left: 0.4rem;
-                color: red;
+                color: blue;
+                font-weight:900px
+                background-color:black;
             }
         }
     }

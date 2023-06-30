@@ -27,19 +27,19 @@ const Container = styled.div`
     text-align: center;
     position: relative;
     @media(max-width: 840px){
-        width: 90%;
+        width: 70%;
     }
     h1{
-        font-size: 1.9rem;
+        font-size: 1rem;
     }
 
     p{
         width: 28rem;
         margin: 0 auto;
         padding: 1rem 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
         @media(max-width : 500px){
-            width: 90%;
+            width: 70%;
         }
     }
     

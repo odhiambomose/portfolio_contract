@@ -38,7 +38,7 @@ const Container = styled.div`
     position: relative;
     animation: header 500ms ease-in-out;
     @media(max-width: 840px){
-        width: 90%;
+        width: 70%;
     }
     .bars{
         display: none;

@@ -50,11 +50,13 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 3rem 0;
   @media (max-width: 840px) {
-    width: 90%;
+    width: 70%;
+    font-size:1rem;
   }
 
   h1 {
-    padding-top: 1rem;
+    padding-top: .7rem;
+    font-size:1.7rem;
   }
 `;
 const Cards = styled.div`
@@ -62,4 +64,5 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  
 `;

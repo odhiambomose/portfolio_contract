@@ -26,27 +26,27 @@ const ProfComponent = () => {
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/" target="_blank">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href="https://twitter.com/Arona_crev">
+                <a href="https://twitter.com/Arona_crev" target="_blank">
                   <AiOutlineTwitter />
                 </a>
               </span>
               <span>
-                <a href="https://www.facebook.com/profile.php?id=100078940822960">
+                <a href="https://www.facebook.com/profile.php?id=100078940822960" target="_blank">
                   <BsFacebook />
                 </a>
               </span>
               <span>
-                <a href="https://github.com/adembasharon">
+                <a href="https://github.com/adembasharon" target="_blank">
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/">
+                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/" target="_blank">
                   <FaLinkedinIn />
                 </a>
               </span>
@@ -75,9 +75,10 @@ const Container = styled.div`
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
+  font-size: 1.7rem;
   z-index: 1;
   @media (max-width: 840px) {
-    width: 90%;
+    width: 70%;
   }
 
   @media (max-width: 640px) {
@@ -88,6 +89,7 @@ const Texts = styled.div`
   flex: 1;
   h4 {
     padding: 1rem 0;
+    font-size:1.3rem;
     font-weight: 500;
   }
   h1 {
@@ -97,12 +99,13 @@ const Texts = styled.div`
   }
   h3 {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-bottom: 1.2rem;
     text-transform: capitalize;
   }
   p {
     font-weight: 300;
+    font-size: 1rem;
   }
 
   button {
@@ -127,7 +130,8 @@ const Social = styled.div`
   p {
     font-size: 0.9rem;
     @media (max-width: 690px) {
-      font-size: 0.7rem;
+      // font-size: 0.7rem;
+      display:none;
     }
   }
 
