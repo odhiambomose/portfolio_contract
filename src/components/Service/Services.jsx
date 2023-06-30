@@ -20,24 +20,21 @@ const Services = () => {
           <Card
             Icon={MdDesignServices}
             title={"ui/ux designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`As a UI/UX developer, I specialize in crafting intuitive and visually stunning interfaces, ensuring seamless user experiences by incorporating modern design principles and leveraging advanced technologies.`}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FiCodesandbox}
-            title={"graphic designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"APP Developer"}
+            disc={`As a React Native app developer, I leverage the power of this cross-platform framework to create dynamic and engaging mobile applications, delivering native-like experiences across iOS and Android devices with efficiency and scalability.`}
           />
         </Slide>
         <Slide direction="right">
           <Card
             Icon={CgWebsite}
             title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`As a web designer, I utilize tools like Figma and other applications to create visually stunning and user-friendly websites. I specialize in crafting engaging layouts, intuitive navigation, and seamless interactions to enhance the overall user experience.`}
           />
         </Slide>
       </Cards>

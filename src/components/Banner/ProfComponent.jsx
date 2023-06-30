@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { BsFacebook} from "react-icons/bs";
+
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
@@ -13,29 +16,37 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Milad Amiri</h1>
+          <h1 className="green">Ademba Sharon</h1>
           <h3>UX/UI Designer and graphic designer</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+          I am proficient in modern technologies, enabling me to create cutting-edge designs for websites that captivate and engage users.
           </p>
           <button>Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
+                <a href="https://www.instagram.com/">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
+                <a href="https://twitter.com/Arona_crev">
+                  <AiOutlineTwitter />
                 </a>
               </span>
               <span>
-                <a href="/">
+                <a href="https://www.facebook.com/profile.php?id=100078940822960">
+                  <BsFacebook />
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/adembasharon">
+                  <AiOutlineGithub />
+                </a>
+              </span>
+              <span>
+                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/">
                   <FaLinkedinIn />
                 </a>
               </span>
@@ -46,7 +57,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            src="https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117183/sharon_vd0ac9.jpg"
             alt="profile"
           />
         </Profile>

@@ -1,44 +1,10 @@
-import React, { useRef } from 'react'
-import Slider from 'react-slick'
+import React from 'react'
 import styled from 'styled-components'
-import ClientSlider from './ClientSlider';
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from 'react-awesome-reveal';
+import { FaRegDotCircle } from "react-icons/fa";
 
-let clients = [
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
-]
+
+
 var settings = {
     dots: true,
     infinite: true,
@@ -75,30 +41,79 @@ var settings = {
     ]}
 
 const Clients = () => {
-    const arrowRef = useRef(null);
-    let clientDisc = "";
-    clientDisc = clients.map((item, i) => (
-        <ClientSlider item={item} key={i}/>
-    ))
+
   return (
     <Container id='client'>
         <Slide direction="left">
-            <span className="green">testimonials</span>
-            <h1>what clients say</h1>
+            <span className="green">Technologies</span>
         </Slide>
         <Testimonials>
-            <Slider ref={arrowRef} {...settings}>
-                {clientDisc}
-            </Slider>
-            <Buttons>
-                <button
-                onClick={() => arrowRef.current.slickPrev()}
-                ><IoIosArrowBack/></button>
-                <button
-                onClick={() => arrowRef.current.slickNext()}
-                ><IoIosArrowForward/></button>
-            </Buttons>
-        </Testimonials>
+            <div className='technologies'>
+                            <Technologieslist>
+                                <Dot>
+                                    <div>
+                                <FaRegDotCircle/>
+                                </div>
+                                <div>
+            <h3>React</h3>
+            </div>
+            </Dot>
+
+
+            <Dot>
+                <div>
+            <FaRegDotCircle/>
+            </div>
+            <div>
+            <h3>Nodejs</h3>
+            </div>
+            </Dot>
+            </Technologieslist>
+
+
+            <Technologieslist>
+            <Dot>
+            <div>
+            <FaRegDotCircle/>
+            </div>
+            <div>
+
+            <h3>WordPress</h3>
+            </div>
+            </Dot>
+            <Dot>
+            <div>
+            <FaRegDotCircle/>
+            </div>
+            <div>
+            <h3>nextjs</h3>
+            </div>
+            </Dot>
+            </Technologieslist>
+
+
+            <Technologieslist>
+            <Dot>
+            <div>
+            <FaRegDotCircle/>
+            </div>
+            <div>
+            <h3>ReactNative</h3>
+            </div>
+            </Dot>
+            <Dot>
+            <div>
+            <FaRegDotCircle/>
+            </div>
+            <div>
+            <h3>Bootsrap</h3>
+            </div>
+            </Dot>
+            </Technologieslist>
+            </div>
+
+            </Testimonials>
+           
     </Container>
   )
 }
@@ -110,6 +125,7 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     padding: 4rem 0;
+
 
     @media(max-width:840px){
         width: 90%;
@@ -132,6 +148,12 @@ const Container = styled.div`
     .slick-dots{
         text-align: left;
         margin-left: 1rem;
+    }
+    .technologies{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
     }
 
     .slick-dots li button:before{
@@ -157,10 +179,21 @@ const Container = styled.div`
         margin: 0;
     }
 `
-
+const Technologieslist=styled.div`  
+  display: flex;
+    flex-direction: column;
+        gap:1em;
+        alignItems:flex-start;
+        
+`
 const Testimonials = styled.div`
     margin-top: 2rem;
     position: relative;
+`
+const Dot = styled.div`
+display: flex;
+flex-direction: row;
+gap:.5em;
 `
 const Buttons = styled.div`
     position: absolute;

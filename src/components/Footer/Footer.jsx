@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -19,14 +19,22 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+          {/* <h1>Get in touch</h1> */}
         </Slide>
+        <FooterItem>
+          <div>
+          <Fade>
+          <ArrowUp onClick={scrollUp}>
+            <AiOutlineArrowUp />
+          </ArrowUp>
+        </Fade>
+          </div>
         <div className="address">
           <Slide direction="left">
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <p>Nairobi, Kenya</p>
           </Slide>
         </div>
         <div className="links">
@@ -38,7 +46,7 @@ const Footer = () => {
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:0779744166">+2547 797 441 66</a>
             </Slide>
           </div>
           <div>
@@ -48,7 +56,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:adembasharon816@gmail.com">adembasharon816@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -59,41 +67,32 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/adembasharon">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/ademba-sharon-101060232/">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.facebook.com/profile.php?id=100078940822960">
                   <BsFacebook />
                 </a>
               </span>
             </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
-                </a>
-              </span>
-            </Zoom>
+           
           </div>
         </div>
-        <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
-        </Fade>
+        </FooterItem>
+       
       </Profile>
-      <Form>
+      {/* <Form>
         <Slide direction="right">
           <form>
             <div className="name">
@@ -117,7 +116,7 @@ const Footer = () => {
             <button>Submit</button>
           </form>
         </Slide>
-      </Form>
+      </Form> */}
     </Container>
   );
 };
@@ -132,7 +131,10 @@ const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: space-between;
+
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -142,6 +144,13 @@ const Container = styled.div`
     gap: 3rem;
   }
 `;
+const FooterItem = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:center;
+gap:4em;
+`
 const Profile = styled.div`
   flex: 1;
   .address {

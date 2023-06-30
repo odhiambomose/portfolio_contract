@@ -6,24 +6,29 @@ import styled from 'styled-components';
 
 let data = [
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117885/magososchool_pibd03.png",
+        link:"https://magoso.org/",
+        disc : "In 1999, in Kibera slum, a district in Nairobi, the capital of Kenya, Lillian established a school by gathering orphans in one room of her house."
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117946/Screenshot_qkmakw.png",
+        link:"https://mislconsultancy.com/",
+        disc : "MISL seeks to strengthen the links between policy practice and good governance, policy dialogue and development outcomes"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117883/nesco_qlkobq.png",
+        link:"https://nescobar.com/",
+        disc : "Nesco is a young talent boy from kibra , Nairobi with alot of ambitions. Get to know him more by following him on different social media platforms. "
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117881/blackeyed_mtdbvr.png",
+        link:"https://adembasharon.github.io/black-eyed-peas/",
+        disc : "is an American musical group consisting of rappers will.i.am, apl.de.ap and Taboo."
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://res.cloudinary.com/dkpvcnel8/image/upload/v1688117879/palindrome_bm6pix.png",
+        link:"https://adembasharon.github.io/palindrome-checker/",
+        disc : "World's simplest browser-based utility for checking if text is a palindrome. Load your text in the input form on the left and it'll instantly get tested"
     }
 ];
 
@@ -100,7 +105,8 @@ const Buttons = styled.div`
   button{
     width: 2rem;
     height: 2rem;
-    background-color: rgba(255, 255, 255, 0.100);
+    // background-color: rgba(255, 255, 255, 0.100);
+    background-color:white;
     cursor: pointer;
     color: #01be96;
     border: none;

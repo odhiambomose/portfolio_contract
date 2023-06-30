@@ -8,8 +8,7 @@ const Projects = () => {
     <Container id='project'>
         <Zoom>
             <h1>Recent <span className="green">Projects</span></h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
+            <p>In my recent projects, I have leveraged the power of WordPress, React Next.js, and Node.js, along with other cutting-edge technologies, to build robust and scalable web applications with seamless integrations and exceptional user experiences.</p>
         </Zoom>
         <Slide>
             <SliderComp/>
